@@ -8,12 +8,15 @@ let secondNumber = ''
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    if (button.textContent === 'Clear') {
+    if (button.textContent === 'AC') {
       firstNumber = '';
       operator = '';
       secondNumber = '';
       result.value = '';
     } else if (button.textContent === '+/-') {
+      if (result.value == '') {
+        return;
+      } 
       result.value = parseFloat(result.value) * -1;
       if (!operator) {
         firstNumber = result.value;
@@ -21,14 +24,15 @@ buttons.forEach(button => {
         secondNumber = result.value;
       }
     } else if (button.textContent === '.') {
-      if (!result.value.includes('.')) {
+      const lastChar = result.value.slice(-1);
+      if (lastChar !== '.') {
         result.value += '.';
         if (!operator) {
           firstNumber += '.';
         } else {
           secondNumber += '.';
-        }
       }
+    }
     } else if (button.textContent === 'del') {
       result.value = result.value.slice(0, -1);
       if (!operator) {

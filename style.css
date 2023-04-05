@@ -1,0 +1,98 @@
+html {
+  /* footer support */
+  min-height: 100%;
+  position: relative;
+  background-color: #d1d1d177;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Saira';
+  justify-content: center;
+  align-items: center;
+  /* footer support */
+  margin-bottom: 100px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-color: #f4f4f4d1;
+  color: black;
+}
+
+.result {
+  font-family: inherit;
+  width: 231px;
+  height: 60px;
+  font-size: 30px;
+  margin-bottom: 13px;
+  padding: 0px 10px;
+  border: 1px solid black;
+  box-shadow: 1px 1px #555 inset;
+  background-color: #ffffffe2;
+  color: black;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px;
+  width: 300px;
+  height: 400px;
+  padding: 22px 0px;
+  gap: 5px;
+  border: 2px solid black;
+  background-color: #0000005c;
+  box-shadow: #0000003d 0px 3px 8px;
+}
+
+#power {
+  font-size: 17px;
+  background-color: #2900de67;
+}
+
+#AC {
+  background-color: #df000071;
+}
+
+#DEL, #AC {
+  font-size: 19px;
+}
+
+#minus {
+  font-size: 22px;
+}
+
+
+/* footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  gap: 10px;
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.fa-github {
+  color: black;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
