@@ -55,6 +55,7 @@ buttons.forEach(button => {
         } else if (operator === '/') {
           if (secondNumber == '0') {
             result.value = '-_-';
+            return; 
           } else {
             result.value = parseFloat(firstNumber) / parseFloat(secondNumber);
           }
@@ -76,6 +77,7 @@ buttons.forEach(button => {
       } else if (operator === '/') {
         if (secondNumber == '0') {
         result.value = '-_-'
+        return; 
         } else result.value = parseFloat(firstNumber) / parseFloat(secondNumber);
       }
       result.value = Math.round(parseFloat(result.value) * 100) / 100;
