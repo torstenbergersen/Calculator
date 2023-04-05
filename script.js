@@ -45,6 +45,25 @@ buttons.forEach(button => {
         result.value += button.textContent;
       }
     } else if (button.textContent.match(/[\+\-\*\/]/)) {
+      if (firstNumber && operator && secondNumber) {
+        if (operator === '+') {
+          result.value = parseFloat(firstNumber) + parseFloat(secondNumber);
+        } else if (operator === '-') {
+          result.value = parseFloat(firstNumber) - parseFloat(secondNumber);
+        } else if (operator === '*') {
+          result.value = parseFloat(firstNumber) * parseFloat(secondNumber);
+        } else if (operator === '/') {
+          if (secondNumber == '0') {
+            result.value = '-_-';
+          } else {
+            result.value = parseFloat(firstNumber) / parseFloat(secondNumber);
+          }
+        }
+        result.value = Math.round(parseFloat(result.value) * 100) / 100;
+        firstNumber = result.value;
+        operator = '';
+        secondNumber = '';
+      }  
       operator = button.textContent;
       result.value += button.textContent;
     } else if (button.textContent === '=') {
