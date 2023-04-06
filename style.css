@@ -102,15 +102,6 @@ button:active {
   font-size: 25px;
 }
 
-#plus, #minus-btn {
-  font-size: 25px;
-}
-
-#times {
-  font-size: 22px;
-  background-color: #8cd1c9cf;
-}
-
 /* footer */
 
 .footer {
