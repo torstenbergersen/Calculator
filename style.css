@@ -93,17 +93,22 @@ button:active {
 }
 
 #equals {
-  font-size: 30px;
+  font-size: 25px;
   background-color: #8cd1c9cf;
 }
 
 .non-number {
   background-color: #8cd1c9cf;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 #plus, #minus-btn {
   font-size: 25px;
+}
+
+#times {
+  font-size: 22px;
+  background-color: #8cd1c9cf;
 }
 
 /* footer */
