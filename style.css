@@ -29,14 +29,20 @@ button {
   font-family: inherit;
   width: 231px;
   height: 60px;
-  font-size: 30px;
+  font-size: 23px;
   margin-bottom: 13px;
   padding: 0px 10px;
+  text-align: right;
   border: 1px solid black;
   box-shadow: 1px 1px #555 inset;
-  background-color: #ffffffe2;
-  color: black;
+  background-color: #fff;
+  color: #000;
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+/* .result:focus {
+  box-shadow: 0 0 10px #2dc51f, 0 0 30px #2dc51f, 0 0 70px #2dc51f;
+} */
 
 .calculator {
   display: flex;

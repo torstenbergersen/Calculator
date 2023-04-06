@@ -1,6 +1,7 @@
 const calculator = document.querySelector('.calculator')
 const result = calculator.querySelector('.result')
 const buttons = calculator.querySelectorAll('button')
+const powerButton = calculator.querySelector('#power')
 
 let firstNumber = ''
 let operator = ''
