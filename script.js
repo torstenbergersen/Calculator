@@ -51,7 +51,7 @@ buttons.forEach(button => {
           secondNumber += '.';
       }
     }
-    } else if (button.textContent === 'del') {
+    } else if (button.textContent === 'DEL') {
       result.value = result.value.slice(0, -1);
       if (!operator) {
         firstNumber = firstNumber.slice(0, -1);
