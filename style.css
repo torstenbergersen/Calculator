@@ -72,14 +72,23 @@ button {
   font-size: 19px;
 }
 
+#DEL {
+  background-color: #c0c0c0;
+}
+
 #minus {
   font-size: 22px;
+  background-color: #c0c0c0;
 }
 
 #equals {
   font-size: 30px;
+  background-color: #c0c0c0;
 }
 
+.non-number {
+  background-color: #c0c0c0;
+}
 /* footer */
 
 .footer {
