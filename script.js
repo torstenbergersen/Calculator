@@ -6,9 +6,21 @@ const powerButton = calculator.querySelector('#power')
 let firstNumber = ''
 let operator = ''
 let secondNumber = ''
+let calculatorOn = true;
+
+powerButton.addEventListener('click', () => {
+  calculatorOn = !calculatorOn;
+  if (!calculatorOn || calculatorOn) {
+    result.value = '';
+  }
+});
+
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
+    if (!calculatorOn) {
+      return;
+    } 
     if (button.textContent === 'AC') {
       firstNumber = '';
       operator = '';
