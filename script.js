@@ -1,6 +1,6 @@
 const calculator = document.querySelector('.calculator')
 const result = calculator.querySelector('.result')
-const buttons = calculator.querySelectorAll('button')
+const buttons = calculator.querySelectorAll('button:not(#power)')
 const powerButton = calculator.querySelector('#power')
 
 let firstNumber = ''
@@ -10,9 +10,14 @@ let calculatorOn = true;
 
 powerButton.addEventListener('click', () => {
   calculatorOn = !calculatorOn;
-  if (!calculatorOn || calculatorOn) {
+  if (!calculatorOn) {
     result.value = '';
-  }
+    result.style.backgroundColor = '#d1d1d1';
+  } 
+  if (calculatorOn) {
+  result.value = '';
+    result.style.backgroundColor = '#fff';
+  }  
 });
 
 
