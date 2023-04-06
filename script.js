@@ -80,7 +80,7 @@ buttons.forEach(button => {
         secondNumber += button.textContent;
         result.value += button.textContent;
       }
-    } else if (button.textContent.match(/[\+\-\x\÷]/)) {
+    } else if (button.textContent.match(/[\+\-\×\÷]/)) {
       // set the operator
       if (firstNumber && operator && secondNumber) {
         // evaluate the expression if both numbers and an operator are present
@@ -88,7 +88,7 @@ buttons.forEach(button => {
           result.value = parseFloat(firstNumber) + parseFloat(secondNumber);
         } else if (operator === '-') {
           result.value = parseFloat(firstNumber) - parseFloat(secondNumber);
-        } else if (operator === 'x') {
+        } else if (operator === '×') {
           result.value = parseFloat(firstNumber) * parseFloat(secondNumber);
         } else if (operator === '÷') {
           if (secondNumber == '0') {
@@ -118,7 +118,7 @@ buttons.forEach(button => {
         result.value = parseFloat(firstNumber) + parseFloat(secondNumber);
       } else if (operator === '-') {
         result.value = parseFloat(firstNumber) - parseFloat(secondNumber);
-      } else if (operator === 'x') {
+      } else if (operator === '×') {
         result.value = parseFloat(firstNumber) * parseFloat(secondNumber);
       } else if (operator === '÷') {
         if (secondNumber == '0') {
