@@ -136,3 +136,35 @@ buttons.forEach(button => {
     }
   });
 });
+
+//keyboard support
+
+document.addEventListener('keydown', function(e) {
+  if (/^[0-9]$/.test(e.key)) {
+    // Get the corresponding element ID based on the pressed key
+    var id = e.key;
+    // Click the element with the corresponding ID
+    document.getElementById(id).click();
+  }
+  if (e.key == '=') {
+    document.getElementById('equals').click();
+  }
+  if (e.key == '+') {
+    document.getElementById('plus').click();
+  }
+  if (e.key == '-') {
+    document.getElementById('minus-btn').click()
+  }
+  if (e.key == '/') {
+    document.getElementById('divide').click()
+  }
+  if (e.key == '*') {
+    document.getElementById('times').click()
+  }
+  if (e.key == '.') {
+    document.getElementById('decimal').click()
+  }  
+  if (e.key == 'Backspace' || e.key == 'Delete') {
+    document.getElementById('DEL').click()
+  }  
+});
