@@ -23,15 +23,16 @@ button {
   margin: 0;
   background-color: #f4f4f4e3;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
   border: none;
   color: black;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5); 
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 button:active {
-  transform: translateY(2px);
+  transform: translate(1px, 1px)
 }
 
 .result {
@@ -44,15 +45,11 @@ button:active {
   text-align: right;
   border: none;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
   background-color: #fff;
   color: #000;
-  transition: box-shadow 0.3s ease-in-out;
+  -webkit-box-shadow: inset 1px 1px 1px 3px rgba(0,0,0,0.57); 
+  box-shadow: inset 1px 1px 1px 3px rgba(0,0,0,0.57);
 }
-
-/* .result:focus {
-  box-shadow: 0 0 10px #2dc51f, 0 0 30px #2dc51f, 0 0 70px #2dc51f;
-} */
 
 .calculator {
   display: flex;
@@ -67,7 +64,9 @@ button:active {
   gap: 5px;
   border: none;
   background-color: #0b0b0b61;
-  box-shadow: #0000003d 0px 3px 8px;
+  /* box-shadow: #0000003d 0px 3px 8px; */
+  -webkit-box-shadow: 2px 3px 1px 5px rgba(0,0,0,0.5); 
+  box-shadow: 2px 3px 1px 5px rgba(0,0,0,0.5);
 }
 
 #power {
