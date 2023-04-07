@@ -1,8 +1,7 @@
 html {
   /* footer support */
   min-height: 100%;
-  position: relative;
-  background-color: #d1d1d177;
+  position: relative;  
 }
 
 body {
@@ -11,6 +10,9 @@ body {
   font-family: 'Saira';
   justify-content: center;
   align-items: center;
+  background: #FFB8B8;
+  background: -moz-linear-gradient(-45deg, #FFB8B8 0%, #C5FFC5 50%, #ACA9FF 100%);
+  background: -webkit-linear-gradient(-45deg, #FFB8B8 0%, #C5FFC5 50%, #ACA9FF 100%);
   /* footer support */
   margin-bottom: 100px;
 }
@@ -63,10 +65,9 @@ button:active {
   padding: 22px 0px;
   gap: 5px;
   border: none;
-  background-color: #0b0b0b61;
-  /* box-shadow: #0000003d 0px 3px 8px; */
-  -webkit-box-shadow: 2px 3px 1px 5px rgba(0,0,0,0.5); 
-  box-shadow: 2px 3px 1px 5px rgba(0,0,0,0.5);
+  background: rgb(157, 157, 157);
+  -webkit-box-shadow: 2px 3px 1px 5px rgba(113, 113, 113, 0.844); 
+  box-shadow: 2px 3px 1px 5px rgba(113, 113, 113, 0.881);
 }
 
 #power {
